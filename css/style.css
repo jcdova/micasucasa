@@ -1,0 +1,230 @@
+/* Initial body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  left: 0;
+  margin: 0;
+  /*overflow: hidden;*/
+  position: relative;
+  background: lightgrey;
+}
+
+h1 { 
+  font-family: Harrington;
+ }
+
+/* @font-face kit by Fonts2u (https://fonts2u.com) */ 
+@font-face {font-family:"Harrington";src:url("HARNGTON.eot?") format("eot"),url("HARNGTON.woff") format("woff"),url("HARNGTON.ttf") format("truetype"),url("HARNGTON.svg#Harrington") format("svg");font-weight:normal;font-style:normal;}
+
+ 
+
+/*This is for the login feature */
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: rgb(20, 41, 41);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 10px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    border-radius: 16px;
+    font-size: large;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+/*img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}*/
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+/* Member Login Page */
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
+
+
+.loginheader {
+    /*background-color: grey;*/
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(14, 234, 234);
+}
+
+/* Container for flexboxes */
+.row {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+}
+
+/* Create three unequal columns that sits next to each other */
+.column {
+    padding: 25px;
+    -webkit-flex: 5;
+    -ms-flex: 5;
+    flex: 5;
+    box-shadow: 0 0 80px rgba(0, 100, 100, 100);
+    text-align: center;
+    margin: 20px
+}
+
+/* Left and right column */
+.column_side {
+   padding: 25px;
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+   text-align: center;
+   margin: 20px;
+}
+
+/* Middle column */
+.column_middle {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    /*box-shadow: 0 0 80px rgba(0, 100, 100, 100);*/
+    text-align: center;
+    /*margin: 20px*/
+}
+
+/* Middle column */
+.column_video {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    /*box-shadow: 0 0 80px rgba(0, 100, 100, 100);*/
+    text-align: center;
+    margin: 20px
+}
+
+/* Style the footer */
+.footer {
+    opacity: 0.5;
+    background-color: grey;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 359px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+    a {
+      display: flex;
+      justify-content: center;
+    }
+  /*  iframe {
+      display: flex;
+      justify-content: center;
+    }
+    #slideshow {
+      display: flex;
+      justify-content: center;
+    }
+    #slide {
+      display: flex;
+      justify-content: center;
+    }*/
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+@viewport {
+  width: device-width;
+
